@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 760" width="760" height="760">
+  <defs>
+    <g id="balloon" fill="currentColor" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+      <ellipse cx="0" cy="-4" rx="24" ry="30"/>
+      <polygon points="-6,24 0,33 6,24"/>
+      <path d="M0,33 q7,13 0,26" fill="none"/>
+      <rect x="-5" y="59" width="10" height="9" rx="2" fill="none"/>
+    </g>
+    <g id="ferris" fill="currentColor" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round">
+      <circle cx="0" cy="0" r="34" fill="none" stroke-width="5"/>
+      <path d="M0,-34 V34 M-34,0 H34 M-24,-24 L24,24 M-24,24 L24,-24" fill="none" stroke-width="3"/>
+      <circle cx="0" cy="0" r="6"/>
+      <circle cx="0" cy="-34" r="5"/><circle cx="0" cy="34" r="5"/><circle cx="-34" cy="0" r="5"/><circle cx="34" cy="0" r="5"/>
+      <circle cx="-24" cy="-24" r="5"/><circle cx="24" cy="24" r="5"/><circle cx="-24" cy="24" r="5"/><circle cx="24" cy="-24" r="5"/>
+      <path d="M-16,44 L0,30 L16,44" fill="none" stroke-width="4"/>
+      <rect x="-20" y="44" width="40" height="6" rx="3"/>
+    </g>
+    <g id="castle" fill="currentColor" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round">
+      <rect x="-32" y="-4" width="64" height="42" rx="2"/>
+      <rect x="-40" y="-18" width="18" height="56" rx="1"/>
+      <rect x="22" y="-18" width="18" height="56" rx="1"/>
+      <rect x="-10" y="-30" width="20" height="68" rx="1"/>
+      <polygon points="-41,-18 -31,-31 -21,-18"/>
+      <polygon points="21,-18 31,-31 41,-18"/>
+      <polygon points="-11,-30 0,-45 11,-30"/>
+      <path d="M0,-45 v-9 l11,4 -11,4" fill="currentColor"/>
+      <path d="M-7,38 v-14 a7,7 0 0 1 14,0 v14" fill="none" stroke-width="3"/>
+    </g>
+    <g id="rocket" fill="currentColor" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round">
+      <path d="M0,-34 C12,-20 12,8 8,22 L-8,22 C-12,8 -12,-20 0,-34 Z"/>
+      <circle cx="0" cy="-8" r="6" fill="none" stroke-width="3"/>
+      <path d="M-8,14 L-20,30 L-8,22 Z"/>
+      <path d="M8,14 L20,30 L8,22 Z"/>
+      <path d="M-5,22 Q0,38 5,22" fill="none" stroke-width="3"/>
+    </g>
+    <g id="icecream" fill="currentColor" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round">
+      <polygon points="-12,6 12,6 0,40"/>
+      <circle cx="-6" cy="-3" r="11"/><circle cx="6" cy="-5" r="11"/><circle cx="0" cy="-15" r="10"/>
+    </g>
+    <g id="ticket" fill="currentColor" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round">
+      <path d="M-40,-15 h80 a5,5 0 0 1 5,5 v5 a7,7 0 0 0 0,14 v5 a5,5 0 0 1 -5,5 h-80 a5,5 0 0 1 -5,-5 v-5 a7,7 0 0 0 0,-14 v-5 a5,5 0 0 1 5,-5 Z"/>
+      <circle cx="-16" cy="0" r="8" fill="none" stroke-width="2.5"/>
+      <path d="M4,-6 h30 M4,6 h30" fill="none" stroke-width="2.5"/>
+    </g>
+    <g id="sun" fill="currentColor" stroke="currentColor" stroke-linecap="round">
+      <circle cx="0" cy="0" r="15"/>
+      <path d="M0,-25 V-33 M0,25 V33 M-25,0 H-33 M25,0 H33 M-18,-18 L-23,-23 M18,18 L23,23 M-18,18 L-23,23 M18,-18 L23,-23" fill="none" stroke-width="4"/>
+    </g>
+    <g id="palm" fill="currentColor" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2,42 C-3,12 -3,-14 3,-34" fill="none"/>
+      <path d="M3,-34 C-16,-44 -38,-40 -50,-27" fill="none"/>
+      <path d="M3,-34 C-6,-54 0,-74 15,-82" fill="none"/>
+      <path d="M3,-34 C22,-44 44,-40 56,-27" fill="none"/>
+      <path d="M3,-34 C14,-52 34,-60 52,-58" fill="none"/>
+      <circle cx="-4" cy="-30" r="4" stroke="none"/><circle cx="8" cy="-28" r="4" stroke="none"/>
+    </g>
+    <g id="camera" fill="currentColor" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round">
+      <rect x="-27" y="-13" width="54" height="34" rx="6"/>
+      <rect x="-10" y="-21" width="20" height="9" rx="2"/>
+      <circle cx="0" cy="5" r="12" fill="none" stroke-width="3.5"/>
+      <circle cx="0" cy="5" r="5"/>
+      <rect x="15" y="-9" width="7" height="6" rx="1.5"/>
+    </g>
+    <g id="popcorn" fill="currentColor" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round">
+      <path d="M-16,-2 L16,-2 L12,34 L-12,34 Z"/>
+      <circle cx="-9" cy="-7" r="7"/><circle cx="3" cy="-11" r="7"/><circle cx="13" cy="-5" r="6"/><circle cx="-2" cy="-15" r="6"/>
+    </g>
+    <g id="plane" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round">
+      <path d="M0,-26 C4,-26 6,-20 6,-11 L26,2 L26,8 L6,3 L6,16 L13,23 L13,27 L0,22 L-13,27 L-13,23 L-6,16 L-6,3 L-26,8 L-26,2 L-6,-11 C-6,-20 -4,-26 0,-26 Z"/>
+    </g>
+    <g id="star" fill="currentColor">
+      <polygon points="0,-22 4.94,-6.8 20.92,-6.8 7.99,2.6 12.93,17.8 0,8.4 -12.93,17.8 -7.99,2.6 -20.92,-6.8 -4.94,-6.8"/>
+    </g>
+  </defs>
+
+  <use href="#balloon"  transform="translate(96,118) rotate(-6)"  color="#A57663"/>
+  <use href="#ferris"   transform="translate(340,100)"            color="#5b7a5e"/>
+  <use href="#castle"   transform="translate(582,128)"            color="#c88a2a"/>
+  <use href="#plane"    transform="translate(704,54) rotate(22)"  color="#92887F"/>
+  <use href="#rocket"   transform="translate(118,344) rotate(14)" color="#b04a37"/>
+  <use href="#icecream" transform="translate(300,352)"            color="#A57663"/>
+  <use href="#ticket"   transform="translate(520,360) rotate(-8)" color="#5b7a5e"/>
+  <use href="#star"     transform="translate(690,300) scale(1.1)" color="#b04a37"/>
+  <use href="#sun"      transform="translate(680,560)"            color="#c88a2a"/>
+  <use href="#palm"     transform="translate(122,580)"            color="#5b7a5e"/>
+  <use href="#camera"   transform="translate(342,584) rotate(6)"  color="#92887F"/>
+  <use href="#popcorn"  transform="translate(548,600)"            color="#A57663"/>
+  <use href="#star"     transform="translate(232,218) scale(0.55)" color="#c88a2a"/>
+  <use href="#star"     transform="translate(470,236) scale(0.5)"  color="#b04a37"/>
+  <use href="#star"     transform="translate(60,470) scale(0.55)"  color="#c88a2a"/>
+  <use href="#star"     transform="translate(628,440) scale(0.5)"  color="#5b7a5e"/>
+  <use href="#balloon"  transform="translate(430,690) rotate(7) scale(0.8)" color="#b04a37"/>
+</svg>

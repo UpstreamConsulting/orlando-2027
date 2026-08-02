@@ -16,12 +16,7 @@
 html{ -webkit-text-size-adjust:100%; }
 body{ margin:0; background:var(--bg); color:var(--ink); font-family:'Gotu',Georgia,serif; font-size:15px; line-height:1.8; -webkit-font-smoothing:antialiased; }
 .wrap{ max-width:1000px; margin:0 auto; padding:30px 20px 72px; position:relative; z-index:1; }
-body{ --bgwash:url('maps/mk.jpg'); }
-body[data-park="epcot"]{ --bgwash:url('maps/epcot.jpg'); }
-body[data-park="ak"]{ --bgwash:url('maps/ak.jpg'); }
-body[data-park="hs"]{ --bgwash:url('maps/hs.jpg'); }
-body[data-park="universal"]{ --bgwash:url('maps/universal.jpg'); }
-body::before{ content:""; position:fixed; inset:0; z-index:0; background:var(--bgwash) center center / cover no-repeat; opacity:.06; filter:grayscale(100%) contrast(1.05); pointer-events:none; }
+body::before{ content:""; position:fixed; inset:0; z-index:0; background:url('bg.svg') repeat; background-size:500px 500px; opacity:.10; pointer-events:none; }
 
 /* top nav (home) */
 .topnav{ margin-bottom:20px; }
