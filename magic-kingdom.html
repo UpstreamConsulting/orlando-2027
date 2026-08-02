@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Magic Kingdom — Park Day Planner</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-park="mk" data-parkname="Magic Kingdom">
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">Orlando Trip · Day Planner · Magic Kingdom</p>
+    <h1>Magic Kingdom</h1>
+    <p class="sub">Every attraction keyed to Disney's official guide-map numbers, with priority, height, Lightning Lane, ride length, intensity, and the best time to go. Waits are typical for a late-January low-crowd week.</p>
+    <div class="meta-row">
+      <span class="chip">👥 <b>6 people</b> · 2 grandparents · 2 adults · kids 5 &amp; 7</span>
+      <span class="chip">🗺️ Numbers = <b>official Disney map</b></span>
+      <span class="chip">📏 Height = the gate rule — <b>measure the kids</b></span>
+    </div>
+  </header>
+
+  <hr class="rule" />
+
+  <h2>The map</h2>
+  <p class="h2note">Disney's official Magic Kingdom guide map. Tap or pinch to zoom the numbered legend — the numbers match the table below.</p>
+
+  <div class="mapcard">
+    <img src="maps/mk.jpg" alt="Official Magic Kingdom guide map with numbered attractions" />
+    <p class="mapcap">Official Disney guide map (Sept 2023 edition). ★ <b>Tiana's Bayou Adventure</b> opened after this printing — it sits in Frontierland where the map still reads &ldquo;Coming 2024,&rdquo; and it's in the table below.</p>
+    <div class="legend">
+      <span class="lg"><span class="sw" style="background:var(--main)"></span>Main Street</span>
+      <span class="lg"><span class="sw" style="background:var(--adv)"></span>Adventureland</span>
+      <span class="lg"><span class="sw" style="background:var(--front)"></span>Frontierland</span>
+      <span class="lg"><span class="sw" style="background:var(--lib)"></span>Liberty Square</span>
+      <span class="lg"><span class="sw" style="background:var(--fant)"></span>Fantasyland</span>
+      <span class="lg"><span class="sw" style="background:var(--tom)"></span>Tomorrowland</span>
+    </div>
+  </div>
+
+  <div class="route">
+    <h3>Suggested route for your crew</h3>
+    <p><span class="step">Rope-drop Fantasyland →</span> 57 · 45 · 53 · 52 · 56 · 46 · 48 <span class="step">→ Tomorrowland →</span> 70 · 76 · 72 <span class="step">→ lunch →</span> midday A/C shows 75 · 74 · 44 <span class="step">→ Adventure &amp; Frontier →</span> 17 · 15 · 16 · 26 · ★ · 28 <span class="step">→ Liberty Sq →</span> 33 · 35 · 34 <span class="step">→ evening parade + Happily Ever After fireworks.</span> Grab character meets (3 · 58 · 50 · 55) whenever you pass one.</p>
+  </div>
+
+  <div class="callout">
+    <div class="exp"><h4>👑 Bibbidi Bobbidi Boutique <span class="cost">$$</span></h4><p>Your daughter's princess makeover — inside Cinderella Castle. Book ~60 days out; the styling tier is the value pick.</p></div>
+    <div class="exp"><h4>🍽️ Character dining <span class="cost">$$$</span></h4><p>Your one character meal — a princess breakfast (e.g. Cinderella's Royal Table) fits the Magic Kingdom day. Book at 60 days.</p></div>
+  </div>
+
+  <hr class="rule" />
+
+  <h2>Every attraction</h2>
+  <p class="h2note"><b>#</b> = number on the map · <b>Plan</b> = suggested order (dashed = flexible). Priority stars = how must-do for <em>your</em> group.</p>
+  <div class="pilllegend">
+    <span><span class="stars">★★★</span> must-do · <span class="stars">★★</span> worth it · <span class="stars">★</span> if time</span>
+    <span class="pill p-thrill">Thrill</span><span class="pill p-dark">Dark</span><span class="pill p-drop">Drops</span><span class="pill p-spin">Spin</span><span class="pill p-wet">Wet</span><span class="pill p-ac">A/C rest</span><span class="pill p-swap">Rider Switch</span><span class="pill p-meet">Character</span>
+    <span>· <b class="ll ll-mp">MP</b> Multi Pass · <b class="ll ll-ill">ILL$</b> pay-per-ride · <b class="ll ll-vq">VQ</b> virtual queue</span>
+  </div>
+
+  <div class="toolbar">
+    <button class="btn primary" id="sortBtn" type="button">Sort by my order</button>
+    <button class="btn" id="copyBtn" type="button">Copy my plan</button>
+    <button class="btn" id="clearBtn" type="button">Clear my entries</button>
+    <span class="flash" id="flash" hidden></span>
+    <span class="toolhint">The last two columns are yours — type your own order (1, 2, 3…) and notes. Entries save on this device and survive reloads. Print gives you a clean white page.</span>
+  </div>
+
+  <div class="tablecard">
+    <div class="scroller">
+      <table>
+        <thead>
+          <tr>
+            <th class="stick">Attraction</th>
+            <th>Height</th>
+            <th>Wait</th>
+            <th>Length</th>
+            <th>Lightning&nbsp;Lane</th>
+            <th>Best time</th>
+            <th>Plan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="landrow"><td colspan="7">Main Street, U.S.A.</td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--main)">2</span> <span class="aname">Walt Disney World Railroad</span><div class="pills"><span class="stars">★</span></div></td><td>Any</td><td class="wait">5–10m</td><td class="len">~20m loop</td><td><span class="ll ll-no">—</span></td><td>Anytime</td><td><span class="plan flex">flex</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--main)">3</span> <span class="aname">Town Square Theater — Meet Mickey</span><div class="pills"><span class="stars">★★</span><span class="pill p-meet">Character</span></div></td><td>Any</td><td class="wait">10–20m</td><td class="len">—</td><td><span class="ll ll-no">—</span></td><td>Anytime</td><td><span class="plan flex">flex</span></td></tr>
+
+          <tr class="landrow"><td colspan="7">Adventureland</td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--adv)">13</span> <span class="aname">Swiss Family Treehouse</span><div class="pills"><span class="stars">★</span><span class="subtle">many stairs</span></div></td><td>Any</td><td class="wait">Walk-up</td><td class="len">—</td><td><span class="ll ll-no">—</span></td><td>Anytime</td><td><span class="plan flex">flex</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--adv)">14</span> <span class="aname">Magic Carpets of Aladdin</span><div class="pills"><span class="stars">★</span><span class="pill p-spin">Spin</span></div></td><td>Any</td><td class="wait">10–15m</td><td class="len">~2m</td><td><span class="ll ll-mp">MP</span></td><td>Early</td><td><span class="plan flex">flex</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--adv)">15</span> <span class="aname">Jungle Cruise</span><div class="pills"><span class="stars">★★★</span></div></td><td>Any</td><td class="wait">30–45m</td><td class="len">~10m</td><td><span class="ll ll-mp">MP</span></td><td>Early / evening</td><td><span class="plan">15</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--adv)">16</span> <span class="aname">Enchanted Tiki Room</span><div class="pills"><span class="stars">★</span><span class="pill p-ac">A/C rest</span></div></td><td>Any</td><td class="wait">10m</td><td class="len">~10m</td><td><span class="ll ll-no">—</span></td><td>Midday</td><td><span class="plan">16</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--adv)">17</span> <span class="aname">Pirates of the Caribbean</span><div class="pills"><span class="stars">★★★</span><span class="pill p-dark">Dark</span><span class="pill p-ac">A/C rest</span></div></td><td>Any</td><td class="wait">15–25m</td><td class="len">~8m</td><td><span class="ll ll-mp">MP</span></td><td>Midday</td><td><span class="plan">14</span></td></tr>
+
+          <tr class="landrow"><td colspan="7">Frontierland</td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--front)">25</span> <span class="aname">WDW Railroad</span> <span class="subtle">(Frontierland stop)</span><div class="pills"><span class="stars">★</span></div></td><td>Any</td><td class="wait">5–10m</td><td class="len">—</td><td><span class="ll ll-no">—</span></td><td>Anytime</td><td><span class="plan flex">flex</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--front)">26</span> <span class="aname">Big Thunder Mountain Railroad</span><div class="pills"><span class="stars">★★★</span><span class="subtle">7+</span><span class="pill p-drop">Drops</span><span class="pill p-swap">Rider Switch</span></div></td><td>40&quot; / 102cm</td><td class="wait">25–40m</td><td class="len">~3.5m</td><td><span class="ll ll-mp">MP</span></td><td>Early / evening</td><td><span class="plan">17</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--front)">27</span> <span class="aname">Tom Sawyer Island</span><div class="pills"><span class="stars">★</span><span class="subtle">raft over &amp; explore</span></div></td><td>Any</td><td class="wait">Walk-up</td><td class="len">—</td><td><span class="ll ll-no">—</span></td><td>Midday</td><td><span class="plan flex">flex</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--front)">28</span> <span class="aname">Country Bear Jamboree</span><div class="pills"><span class="stars">★★</span><span class="pill p-ac">A/C rest</span></div></td><td>Any</td><td class="wait">10m</td><td class="len">~12m</td><td><span class="ll ll-no">—</span></td><td>Midday</td><td><span class="plan">19</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--accent)">★</span> <span class="aname">Tiana&#39;s Bayou Adventure</span> <span class="subtle">(opened 2024)</span><div class="pills"><span class="stars">★★</span><span class="subtle">7+</span><span class="pill p-drop">Drops</span><span class="pill p-wet">Wet</span><span class="pill p-swap">Rider Switch</span></div></td><td>40&quot; / 102cm</td><td class="wait">35–55m</td><td class="len">~5m</td><td><span class="ll ll-mp">MP</span></td><td>Warm midday</td><td><span class="plan">18</span></td></tr>
+
+          <tr class="landrow"><td colspan="7">Liberty Square</td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--lib)">33</span> <span class="aname">The Hall of Presidents</span><div class="pills"><span class="stars">★</span><span class="pill p-ac">A/C rest</span><span class="subtle">nap-friendly</span></div></td><td>Any</td><td class="wait">15m</td><td class="len">~23m</td><td><span class="ll ll-no">—</span></td><td>Midday</td><td><span class="plan">20</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--lib)">34</span> <span class="aname">Liberty Square Riverboat</span><div class="pills"><span class="stars">★</span></div></td><td>Any</td><td class="wait">10m</td><td class="len">~17m</td><td><span class="ll ll-no">—</span></td><td>Midday</td><td><span class="plan">22</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--lib)">35</span> <span class="aname">Haunted Mansion</span><div class="pills"><span class="stars">★★★</span><span class="pill p-dark">Dark</span><span class="pill p-ac">A/C rest</span><span class="subtle">may spook 5-yr-old</span></div></td><td>Any</td><td class="wait">20–30m</td><td class="len">~8m</td><td><span class="ll ll-mp">MP</span></td><td>Evening</td><td><span class="plan">21</span></td></tr>
+
+          <tr class="landrow"><td colspan="7">Fantasyland</td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--fant)">43</span> <span class="aname">Prince Charming Regal Carrousel</span><div class="pills"><span class="stars">★</span></div></td><td>Any</td><td class="wait">10m</td><td class="len">~2m</td><td><span class="ll ll-no">—</span></td><td>Anytime</td><td><span class="plan flex">flex</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--fant)">44</span> <span class="aname">Mickey&#39;s PhilharMagic</span><div class="pills"><span class="stars">★★</span><span class="pill p-ac">A/C rest</span><span class="subtle">nap-friendly</span></div></td><td>Any</td><td class="wait">10m</td><td class="len">~12m</td><td><span class="ll ll-mp">MP</span></td><td>Midday</td><td><span class="plan">13</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--fant)">45</span> <span class="aname">Peter Pan&#39;s Flight</span><div class="pills"><span class="stars">★★★</span><span class="pill p-dark">Dark</span><span class="subtle">always busy</span></div></td><td>Any</td><td class="wait">35–55m</td><td class="len">~3m</td><td><span class="ll ll-mp">MP</span></td><td>First hour / last</td><td><span class="plan">2</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--fant)">46</span> <span class="aname">&quot;it&#39;s a small world&quot;</span><div class="pills"><span class="stars">★★</span><span class="pill p-ac">A/C rest</span></div></td><td>Any</td><td class="wait">10–15m</td><td class="len">~11m</td><td><span class="ll ll-mp">MP</span></td><td>Midday</td><td><span class="plan">6</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--fant)">47</span> <span class="aname">Enchanted Tales with Belle</span><div class="pills"><span class="stars">★★</span><span class="pill p-meet">Character</span><span class="subtle">interactive</span></div></td><td>Any</td><td class="wait">20–30m</td><td class="len">~20m</td><td><span class="ll ll-no">—</span></td><td>Morning</td><td><span class="plan flex">flex</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--fant)">48</span> <span class="aname">Under the Sea · Little Mermaid</span><div class="pills"><span class="stars">★★</span><span class="pill p-dark">Dark</span><span class="pill p-ac">A/C rest</span></div></td><td>Any</td><td class="wait">10m</td><td class="len">~6m</td><td><span class="ll ll-mp">MP</span></td><td>Anytime</td><td><span class="plan">7</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--fant)">49</span> <span class="aname">Meet Ariel in Her Grotto</span><div class="pills"><span class="stars">★</span><span class="pill p-meet">Character</span></div></td><td>Any</td><td class="wait">15–25m</td><td class="len">—</td><td><span class="ll ll-no">—</span></td><td>Anytime</td><td><span class="plan flex">flex</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--fant)">50</span> <span class="aname">Pete&#39;s Silly Sideshow</span><div class="pills"><span class="stars">★</span><span class="pill p-meet">Character</span><span class="subtle">Donald, Goofy, Daisy, Minnie</span></div></td><td>Any</td><td class="wait">15–25m</td><td class="len">—</td><td><span class="ll ll-no">—</span></td><td>Anytime</td><td><span class="plan flex">flex</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--fant)">51</span> <span class="aname">WDW Railroad</span> <span class="subtle">(Fantasyland stop)</span><div class="pills"><span class="stars">★</span></div></td><td>Any</td><td class="wait">5–10m</td><td class="len">—</td><td><span class="ll ll-no">—</span></td><td>Anytime</td><td><span class="plan flex">flex</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--fant)">52</span> <span class="aname">The Barnstormer</span><div class="pills"><span class="stars">★★★</span><span class="subtle">kids&#39; 1st coaster</span><span class="pill p-drop">Drops</span><span class="pill p-swap">Rider Switch</span></div></td><td>35&quot; / 89cm</td><td class="wait">15–25m</td><td class="len">~1m</td><td><span class="ll ll-mp">MP</span></td><td>Morning</td><td><span class="plan">4</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--fant)">53</span> <span class="aname">Dumbo the Flying Elephant</span><div class="pills"><span class="stars">★★★</span></div></td><td>Any</td><td class="wait">15m</td><td class="len">~2m</td><td><span class="ll ll-mp">MP</span></td><td>Morning</td><td><span class="plan">3</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--fant)">54</span> <span class="aname">Mad Tea Party</span><div class="pills"><span class="stars">★</span><span class="pill p-spin">Spin</span></div></td><td>Any</td><td class="wait">10m</td><td class="len">~1.5m</td><td><span class="ll ll-mp">MP</span></td><td>Anytime</td><td><span class="plan flex">flex</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--fant)">55</span> <span class="aname">Meet Mirabel at Fairytale Garden</span><div class="pills"><span class="stars">★</span><span class="pill p-meet">Character</span><span class="subtle">Encanto</span></div></td><td>Any</td><td class="wait">15–20m</td><td class="len">—</td><td><span class="ll ll-no">—</span></td><td>Morning</td><td><span class="plan flex">flex</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--fant)">56</span> <span class="aname">Many Adventures of Winnie the Pooh</span><div class="pills"><span class="stars">★★</span></div></td><td>Any</td><td class="wait">15–20m</td><td class="len">~4m</td><td><span class="ll ll-mp">MP</span></td><td>Morning</td><td><span class="plan">5</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--fant)">57</span> <span class="aname">Seven Dwarfs Mine Train</span><div class="pills"><span class="stars">★★★</span><span class="pill p-drop">Drops</span><span class="pill p-swap">Rider Switch</span></div></td><td>38&quot; / 97cm</td><td class="wait">45–70m</td><td class="len">~3m</td><td><span class="ll ll-ill">ILL$</span></td><td>Rope-drop FIRST</td><td><span class="plan">1</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--fant)">58</span> <span class="aname">Princess Fairytale Hall</span><div class="pills"><span class="stars">★★★</span><span class="pill p-meet">Character</span><span class="subtle">meet princesses</span></div></td><td>Any</td><td class="wait">30–45m</td><td class="len">—</td><td><span class="ll ll-no">—</span></td><td>Morning / rope-drop</td><td><span class="plan flex">flex</span></td></tr>
+
+          <tr class="landrow"><td colspan="7">Tomorrowland</td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--tom)">70</span> <span class="aname">Tomorrowland Speedway</span><div class="pills"><span class="stars">★★</span><span class="subtle">drive a car</span></div></td><td>32&quot; / 81cm</td><td class="wait">20–30m</td><td class="len">~5m</td><td><span class="ll ll-mp">MP</span></td><td>Morning</td><td><span class="plan">10</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--tom)">71</span> <span class="aname">TRON Lightcycle / Run</span><div class="pills"><span class="pill p-thrill">Thrill</span><span class="pill p-dark">Dark</span><span class="pill p-swap">Rider Switch</span><span class="subtle">adults</span></div></td><td>48&quot; / 122cm</td><td class="wait">40–60m</td><td class="len">~1m</td><td><span class="ll ll-vq">VQ</span> / <span class="ll ll-ill">ILL$</span></td><td>Rope-drop / evening</td><td><span class="plan flex">flex</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--tom)">72</span> <span class="aname">Space Mountain</span><div class="pills"><span class="stars">★★</span><span class="pill p-thrill">Thrill</span><span class="pill p-dark">Dark</span><span class="pill p-swap">Rider Switch</span><span class="subtle">7-yr-old if tall enough</span></div></td><td>44&quot; / 112cm</td><td class="wait">30–45m</td><td class="len">~3m</td><td><span class="ll ll-mp">MP</span></td><td>Early / evening</td><td><span class="plan">9</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--tom)">73</span> <span class="aname">Astro Orbiter</span><div class="pills"><span class="stars">★</span><span class="pill p-spin">Spin</span></div></td><td>Any</td><td class="wait">15m</td><td class="len">~2m</td><td><span class="ll ll-no">—</span></td><td>Anytime</td><td><span class="plan flex">flex</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--tom)">74</span> <span class="aname">PeopleMover</span><div class="pills"><span class="stars">★★</span><span class="pill p-ac">rest</span><span class="subtle">grandparent favorite</span></div></td><td>Any</td><td class="wait">5–10m</td><td class="len">~10m</td><td><span class="ll ll-no">—</span></td><td>Anytime</td><td><span class="plan">12</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--tom)">75</span> <span class="aname">Walt Disney&#39;s Carousel of Progress</span><div class="pills"><span class="stars">★★</span><span class="pill p-ac">A/C rest</span><span class="subtle">nap-friendly</span></div></td><td>Any</td><td class="wait">5m</td><td class="len">~21m</td><td><span class="ll ll-no">—</span></td><td>Midday</td><td><span class="plan">11</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--tom)">76</span> <span class="aname">Buzz Lightyear&#39;s Space Ranger Spin</span><div class="pills"><span class="stars">★★★</span><span class="pill p-ac">A/C rest</span><span class="subtle">kids love it</span></div></td><td>Any</td><td class="wait">15–20m</td><td class="len">~5m</td><td><span class="ll ll-mp">MP</span></td><td>Midday</td><td><span class="plan">8</span></td></tr>
+          <tr><td class="stick"><span class="num" style="background:var(--tom)">77</span> <span class="aname">Monsters, Inc. Laugh Floor</span><div class="pills"><span class="stars">★★</span><span class="pill p-ac">A/C rest</span><span class="subtle">interactive comedy</span></div></td><td>Any</td><td class="wait">10–15m</td><td class="len">~15m</td><td><span class="ll ll-mp">MP</span></td><td>Midday</td><td><span class="plan flex">flex</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <p class="foot">
+    <b>How to read the plan.</b> Rope drop = be at the gate ~30 min before official open and walk straight to #57. The biggest time-savers to hit first or last: Seven Dwarfs (57), Peter Pan (45), Space Mountain (72). Midday is for A/C rest spots (green pills) while lines and heat peak.<br>
+    <b>Height reality check.</b> A typical 7-yr-old (~48&quot;) clears everything here. A typical 5-yr-old (~43&quot;) clears the 32–40&quot; rides but is under 44&quot; (Space Mountain) and 48&quot; (TRON) — use the <span class="pill p-swap">Rider Switch</span> rides so both adults still ride. Measure both before you go.<br>
+    <b>Lightning Lane</b> is shown as typical assignments — <b class="ll ll-ill">ILL$</b> (Seven Dwarfs, TRON) is bought per-ride at park open for off-site guests; <b class="ll ll-mp">MP</b> rides are covered by one Multi Pass purchase. Verify in the My Disney Experience app the morning of, along with live waits. Numbering follows Disney&#39;s Sept 2023 guide map.
+  </p>
+
+
+  
+
+</div>
+<script src="planner.js"></script>
+</body>
+</html>
